@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#0066AE",
+      "borderRadius": 10,
+      "elevation": 8,
+      "opacity": 1,
+      "paddingHorizontal": 12,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#fff",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "textTransform": "uppercase",
+      }
+    }
+  >
+    Like
+  </Text>
+</View>
+`;
