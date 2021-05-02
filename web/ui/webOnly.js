@@ -8,7 +8,7 @@ class WebOnly extends Component {
     
     return (
       <div className="LikeButton">
-        <h1>MY POSTss</h1>
+        <h1>MY POSTs</h1>
       </div>
     );
   }
