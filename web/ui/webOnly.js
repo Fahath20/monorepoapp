@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class MyPost extends Component {
+class WebOnly extends Component {
   state = {};
   componentDidMount() {
     //this.props.fetchArticleDetails();
@@ -13,4 +13,4 @@ class MyPost extends Component {
     );
   }
 }
-export default MyPost;
+export default WebOnly;

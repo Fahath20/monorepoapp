@@ -10,7 +10,7 @@ export function fetchArticleDetails() {
   });
 }
 
-function setArticleDetails(data) {
+export function setArticleDetails(data) {
   return {
     type: SET_ARTICLE_DETAILS,
     payload: data

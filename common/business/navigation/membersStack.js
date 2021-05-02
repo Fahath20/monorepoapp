@@ -2,11 +2,9 @@ import { createStackNavigator } from 'react-navigation-stack';
 import React from 'react';
 import Header from '../../components/header';
 import Members from '../../ui/members';
-import MyPost from '../../../web/ui/myPost';
-import {isWeb} from '../../utils'
 
 const MembersStack = () => {
-  return isWeb ? <Members/> : <Members/>
+  return <Members/>
 }
 
 const screens = {
