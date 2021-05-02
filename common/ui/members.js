@@ -8,7 +8,6 @@ import { connect } from "react-redux";
 import {fetchArticleDetails} from '../business/redux/actions/articleAction'
 
 
-
 class Members extends React.Component {
 
   componentDidMount() {
@@ -16,7 +15,6 @@ class Members extends React.Component {
   }
 
   render() {
-    console.log(this.props.data)
     return (
       <SafeAreaView style={globalStyles.container}>
         {this.props.isLoadingData ? <Loader/> : 
@@ -33,13 +31,12 @@ class Members extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  
   data: state.data.data,
   isLoadingData: state.data.isLoadingData 
 });
 export default connect(
   mapStateToProps,
   {
-    fetchArticleDetails
+    fetchArticleDetails,
   }
 )(Members);

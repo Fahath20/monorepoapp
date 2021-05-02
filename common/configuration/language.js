@@ -1,7 +1,20 @@
-export const instructionEn = `1. Wear Mask 
-2. Wash hands`;
+const content = {
+    en:{
+      how:"How do you want your egg today?",
+      boiledEgg:"Boiled egg",
+      softBoiledEgg:"Soft-boiled egg",
+      choice:"How to choose the egg"
+    },
+    it: {
+      how:"Come vuoi il tuo uovo oggi?",
+      boiledEgg:"Uovo sodo",
+      softBoiledEgg:"Uovo alla coque",
+      choice:"Come scegliere l'uovo"
+    }
+};
 
-export const instructionMx = `1. Usar máscara
-2. Lavarse las manos`;
+export const defaultLanguage = "it"
 
-export const language = "Mx"
+export function getLanguageConfig(language) {
+    return content[language]
+}

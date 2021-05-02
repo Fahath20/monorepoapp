@@ -14,6 +14,8 @@ const rendering =  {
 const api = {
     baseURL: "https://jsonplaceholder.typicode.com",
     userPath: "/users/",
+    addUser: "/addUser/",
+    listServices: "/services/",
     pagination: false
 }
 
