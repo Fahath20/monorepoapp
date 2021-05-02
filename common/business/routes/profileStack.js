@@ -10,7 +10,7 @@ const ProfileTab = () => {
 }
 
 const screens = {
-  Profile: {
+  profile: {
     screen: ProfileTab,
     navigationOptions: ({ navigation }) => {
       return {

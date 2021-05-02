@@ -4,7 +4,7 @@ import Header from '../../components/header';
 import About from '../../ui/about';
 
 const screens = {
-  About: {
+  about: {
     screen: About,
     navigationOptions: ({ navigation }) => {
       return {

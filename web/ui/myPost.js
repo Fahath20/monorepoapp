@@ -8,7 +8,7 @@ class MyPost extends Component {
     
     return (
       <div className="LikeButton">
-        <h1>MY POST</h1>
+        <h1>MY POSTss</h1>
       </div>
     );
   }

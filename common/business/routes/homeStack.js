@@ -7,7 +7,7 @@ import {Platform} from "react-native";
 const isWeb = Platform.OS === 'web';
 
 const screens = {
-  Home: {
+  users: {
     screen: Home,
     navigationOptions: ({ navigation }) => {
       return {
@@ -15,7 +15,7 @@ const screens = {
       }
     },
   },
-  ReviewDetails: {
+  detail: {
     screen: ReviewDetails,
     navigationOptions: {
       title: 'Review Details',

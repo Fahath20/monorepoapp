@@ -5,6 +5,9 @@ import LikeButton from '../components/LikeButton'
 //import MLikeButton from '../components/mobile/MLikeButton'
 import {instructions} from '../utils'
 import {Platform} from "react-native";
+import Paper from '../components/paper'
+import StyledComponent from '../components/Styled'
+
 
 const isWeb = Platform.OS === 'web';
 
@@ -13,6 +16,8 @@ export default function About() {
     <View style={globalStyles.container}>
       <Text>{instructions('En')}</Text>
       <LikeButton/>
+      <Paper/>
+      <StyledComponent/>
     </View>
   );
 }
