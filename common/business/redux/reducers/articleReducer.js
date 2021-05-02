@@ -1,10 +1,11 @@
 import {
-  SET_ARTICLE_DETAILS,
   API_START,
   API_END,
+} from "../actionTypes/apiActionTypes";
+import {
+  SET_ARTICLE_DETAILS,
   FETCH_ARTICLE_DETAILS
-} from "../actions/types";
-
+} from "../actionTypes/articleActionTypes";
 export default function(state = {}, action) {
   console.log("action type => ", action.type);
   switch (action.type) {

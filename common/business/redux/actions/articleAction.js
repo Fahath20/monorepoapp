@@ -1,8 +1,9 @@
-import { SET_ARTICLE_DETAILS, API, FETCH_ARTICLE_DETAILS } from "./types";
-
+import { SET_ARTICLE_DETAILS, FETCH_ARTICLE_DETAILS } from "../actionTypes/articleActionTypes";
+import {  API } from "../actionTypes/apiActionTypes";
+import config from "../../../configuration/allPlatform"
 export function fetchArticleDetails() {
   return apiAction({
-    url: "https://jsonplaceholder.typicode.com/users",
+    url: config.api.baseURL + config.api.userPath,
     onSuccess: setArticleDetails,
     onFailure: () => console.log("Error occured loading articles"),
     label: FETCH_ARTICLE_DETAILS
@@ -10,7 +11,6 @@ export function fetchArticleDetails() {
 }
 
 function setArticleDetails(data) {
-  console.log(data)
   return {
     type: SET_ARTICLE_DETAILS,
     payload: data

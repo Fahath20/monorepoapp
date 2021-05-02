@@ -16,7 +16,6 @@ import {
 const Paper = () => {
    return (
        <View>
-           <Headline style={{ marginLeft: 23 }}>Lastest Post</Headline>
            <Card
                style={{
                    shadowOffset: { width: 5, height: 5 },
@@ -31,7 +30,7 @@ const Paper = () => {
                        style={{
                            width: '100%',
                            height: 190,
-                           alignSelf: 'center',
+                           alignSelf: 'left',
                        }}
                        source={{
                            uri:

@@ -14,9 +14,6 @@ const isWeb = Platform.OS === 'web';
 export default function About() {
   return (
     <View style={globalStyles.container}>
-      <Text>{instructions('En')}</Text>
-      <LikeButton/>
-      <Paper/>
       <StyledComponent/>
     </View>
   );

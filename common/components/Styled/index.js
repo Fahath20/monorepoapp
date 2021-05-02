@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import Paper from '../paper'
+import LikeButton from '../LikeButton'
 
 export default class StyledComponent extends React.Component {
 
@@ -10,6 +12,8 @@ export default class StyledComponent extends React.Component {
                     <Avatar source={require('../../../assets/favicon.png')} />
 					<Title>Welcome back,</Title>
 					<Name>Fahath</Name>
+                    <Paper/>
+                    <LikeButton/>
 				</Titlebar>
 			</Container>
 		);
@@ -25,7 +29,7 @@ const Container = styled.View`
 
 const Titlebar = styled.View`
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 10px;
 	padding-left: 80px;
 `;
 

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators as actions } from '../../business/redux/actions/timerAction';
 
-import PlayButton from '../../AppButton/playBtn';
+import PlayButton from '../../components/playBtn';
 
 function formatTime(time) {
 	let minutes = Math.floor(time / 60);
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-	const { isPlaying, elapsedTime, timerDuration } = state;
+	const { isPlaying, elapsedTime, timerDuration } = state.timer;
 	return {
 		isPlaying,
 		elapsedTime,

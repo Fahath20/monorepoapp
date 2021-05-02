@@ -5,7 +5,8 @@ import {createBrowserApp} from '@react-navigation/web';
 // stacks
 import HomeStack from './homeStack';
 import AboutStack from './aboutStack';
-import ProfileStack from './profileStack';
+import MembersStack from './membersStack';
+import TimerStack from './timerStack';
 
 import {Platform} from "react-native";
 
@@ -13,15 +14,18 @@ const isWeb = Platform.OS === 'web';
 
 // drawer navigation options
 const RootDrawerNavigator = createDrawerNavigator({
-  Home: {
+  MyVacations: {
     screen: HomeStack,
   },
-  About: {
+  MyPosts: {
     screen: AboutStack,
   },
-  Profile: {
-    screen: ProfileStack,
+  Members: {
+    screen: MembersStack,
   },
+  Timer: {
+    screen: TimerStack,
+  }
 });
 
 //export default createAppContainer(RootDrawerNavigator);

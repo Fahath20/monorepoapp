@@ -1,7 +1,7 @@
 // inspired by https://leanpub.com/redux-book
 import axios from "axios";
-import { API } from "../actions/types";
-import { accessDenied, apiError, apiStart, apiEnd } from "../actions/api";
+import { API } from "../actionTypes/apiActionTypes";
+import { accessDenied, apiError, apiStart, apiEnd } from "../actions/apiActions";
 
 const apiMiddleware = ({ dispatch }) => next => action => {
   next(action);
@@ -18,18 +18,11 @@ const apiMiddleware = ({ dispatch }) => next => action => {
     label,
     headers
   } = action.payload;
-  // const dataOrParams = ["GET", "DELETE"].includes(method) ? "params" : "data";
-
-  // // axios default configs
-  // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL || "";
-  // axios.defaults.headers.common["Content-Type"] = "application/json";
-  // axios.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
 
   if (label) {
     dispatch(apiStart(label));
   }
 
-  console.log(action.payload)
   axios
     .request({
       url,
@@ -37,7 +30,7 @@ const apiMiddleware = ({ dispatch }) => next => action => {
       headers,
     })
     .then(({ data }) => {
-      console.log(data)
+
       dispatch(onSuccess(data));
     })
     .catch(error => {

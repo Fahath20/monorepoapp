@@ -11,11 +11,11 @@ const screens = {
     screen: Home,
     navigationOptions: ({ navigation }) => {
       return {
-        headerTitle: () => <Header title='GameZone' navigation={navigation} />
+        headerTitle: () => <Header title='My Vacations' navigation={navigation} />
       }
     },
   },
-  detail: {
+  details: {
     screen: ReviewDetails,
     navigationOptions: {
       title: 'Review Details',
