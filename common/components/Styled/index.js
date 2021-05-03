@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 import Paper from '../paper'
 import LikeButton from '../LikeButton'
 
+//Styled components to support web styles css in all platforms
 export default class StyledComponent extends React.Component {
 
 	render() {

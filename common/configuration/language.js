@@ -13,7 +13,7 @@ const content = {
     }
 };
 
-export const defaultLanguage = "it"
+export const defaultLanguage = "en"
 
 export function getLanguageConfig(language) {
     return content[language]

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import {getLanguageConfig, defaultLanguage} from '../../common/configuration/language'
 import {setLanguage} from '../../common/business/redux/actions/localizationActions'
 
+//This component will render only in web, I made this to show we can add web specific UI rendering when needed
 class WebOnly extends Component {
   state = {};
 componentDidMount() {

@@ -13,6 +13,7 @@ import {
    withTheme
  } from 'react-native-paper';
 
+ //React native paper to add styling to native components, this supports both web and native 
 const Paper = () => {
    return (
        <View>

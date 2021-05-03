@@ -1,4 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
+//I used WDIO to support for UI testing with cucumber framework
 
 Given(/^Launch (\w+) page$/, async (page) => {
     await browser.url('http://localhost:19006/MyVacations/users');

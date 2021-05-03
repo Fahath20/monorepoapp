@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Heart from "react-animated-heart";
 
+//Fully web supported heart animation
 export default function LikeButton() {
   const [isClick, setClick] = useState(false);
   return (

@@ -30,6 +30,7 @@ class Members extends React.Component {
   }
 }
 
+//Redux call
 const mapStateToProps = (state) => ({
   data: state.data.data,
   isLoadingData: state.data.isLoadingData 

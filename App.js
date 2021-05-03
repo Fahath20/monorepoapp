@@ -6,6 +6,7 @@ import store from './common/business/redux/store';
 
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
+//Launch point
 export default class App extends React.Component {
   
 	render() {

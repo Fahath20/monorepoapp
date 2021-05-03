@@ -1,4 +1,4 @@
-Feature: The Internet Guinea Pig Website
+Feature: My vacations Application
 
   Scenario Outline: As a user, I can view my vacations
 
