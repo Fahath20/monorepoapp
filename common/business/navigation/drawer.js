@@ -26,7 +26,7 @@ const RootDrawerNavigator = createDrawerNavigator({
   Members: {
     screen: MembersStack,
   },
-  Timer: {
+  Watch: {
     screen: TimerStack,
   },
   WebOnly: { 

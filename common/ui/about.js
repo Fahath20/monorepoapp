@@ -3,7 +3,6 @@ import { StyleSheet, View, Text } from 'react-native';
 import { globalStyles } from '../styles/index.native';
 import LikeButton from '../components/LikeButton'
 //import MLikeButton from '../components/mobile/MLikeButton'
-import {instructions} from '../utils'
 import {Platform} from "react-native";
 import Paper from '../components/paper'
 import StyledComponent from '../components/Styled'
