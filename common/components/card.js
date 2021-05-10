@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import {Platform} from "react-native";
 
 export default function Card(props) {
   return (
@@ -22,6 +23,12 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     marginHorizontal: 4,
     marginVertical: 6,
+    ...Platform.select({
+     
+      web: {
+          height:200,
+      }
+  }), 
   },
   cardContent: {
     marginHorizontal: 18,

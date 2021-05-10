@@ -1,13 +1,13 @@
 import { darkTheme } from './darkTheme'
 import { lightTheme } from './lightTheme'
-
+import {isWeb} from '../utils'
 
 let current = "light"
 
 const theme = current == "dark" ? darkTheme: lightTheme
 
 const rendering =  {
-    renderCardsHorizantally: false,
+    renderCardsHorizantally: isWeb,
     numberOfRows: 5
 }
 

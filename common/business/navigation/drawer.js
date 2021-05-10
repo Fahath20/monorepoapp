@@ -9,10 +9,9 @@ import HomeStack from './homeStack';
 import AboutStack from './aboutStack';
 import MembersStack from './membersStack';
 import TimerStack from './timerStack';
-import WebOnly from '../../../web/ui/webOnly'
+import MyScreen from '../../ui/MyScreen'
 import {globalStyles} from '../../styles'
 import {Platform} from "react-native";
-
 const isWeb = Platform.OS === 'web';
 
 // drawer navigation options
@@ -29,17 +28,14 @@ const RootDrawerNavigator = createDrawerNavigator({
   Watch: {
     screen: TimerStack,
   },
-  WebOnly: { 
-    screen: WebOnly,
+  MyScreen: { 
+    screen: MyScreen,
     navigationOptions: {
-      title: 'Web Onl',
+      title: 'My Screen',
       drawerLabel: ({ tintColor, focused }) => {
-        if (!isWeb) {
-          return null;
-        }
 
         return (
-          <Text style={globalStyles.titleText}>   WebOnly</Text>
+          <Text style={globalStyles.titleText}>   {isWeb ? "Web Only" : "Mobile Only"}</Text>
         );
       }
     }
