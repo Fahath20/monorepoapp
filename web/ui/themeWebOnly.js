@@ -4,7 +4,6 @@ import  {useDarkMode} from "../components/useDarkMode"
 import { GlobalStyles } from "../components/Globalstyle";
 import { lightTheme, darkTheme } from "../components/Themes"
 import Toggle from "../components/Toggler"
-//import "../styles/app.css";
 import {dummyData} from "../../common/utils";
 import CardList from "../components/CardList";
 

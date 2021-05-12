@@ -4,7 +4,7 @@ import {getLanguageConfig, defaultLanguage} from '../../../common/configuration/
 import {setLanguage} from '../../../common/business/redux/actions/localizationActions'
 import { View, Text, Button, Alert } from 'react-native'; 
 import { globalStyles } from '../../styles/index.native';
-import ThemeSample from "../themeSample";
+import ThemeSample from "../themeNative";
 
 //This component will render only in web, I made this to show we can add web specific UI rendering when needed
 class MobileOnly extends Component {
