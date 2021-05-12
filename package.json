@@ -5,11 +5,15 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "dev": "expo publish --release-channel dev",
+    "prod": "expo publish --release-channel prod",
+    "staging": "expo publish --release-channel staging",
     "eject": "expo eject",
     "test": "jest",
     "uitest": "wdio run ./wdio.conf.js",
     "deploy": "gh-pages -d web-build",
-    "predeploy": "expo build:web"
+    "predeploy": "expo build:web",
+    "deploy-hosting": "yarn predeploy && firebase deploy --only hosting"
   },
   "jest": {
     "preset": "jest-expo"
@@ -25,6 +29,7 @@
     "react-animated-heart": "^0.0.7-alpha.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-dotenv": "^2.5.5",
     "react-native-double-click-instagram": "^1.0.4",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-paper": "^4.8.1",
@@ -47,10 +52,11 @@
     "@wdio/local-runner": "^7.5.4",
     "@wdio/spec-reporter": "^7.5.3",
     "chromedriver": "^90.0.0",
+    "gh-pages": "^3.1.0",
     "jest-expo": "^41.0.0",
     "react-test-renderer": "^17.0.2",
     "wdio-chromedriver-service": "^7.0.0"
   },
   "private": true,
-  "homepage": "https://fahath20.github.io/monorepoapp/"
+  "homepage": "https://fahath20.github.io/monorepoapp"
 }

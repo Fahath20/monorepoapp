@@ -2,6 +2,7 @@ import { SET_ARTICLE_DETAILS, FETCH_ARTICLE_DETAILS } from "../actionTypes/artic
 import {  API } from "../actionTypes/apiActionTypes";
 import config from "../../../configuration/allPlatform"
 export function fetchArticleDetails() {
+  console.log("baseurl:", config.api.baseURL)
   return apiAction({
     url: config.api.baseURL + config.api.userPath,
     onSuccess: setArticleDetails,

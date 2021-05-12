@@ -1,6 +1,7 @@
 import { darkTheme } from './darkTheme'
 import { lightTheme } from './lightTheme'
 import {isWeb} from '../utils'
+import getEnvVars from './environment';
 
 let current = "light"
 
@@ -11,8 +12,10 @@ const rendering =  {
     numberOfRows: 5
 }
 
+const { apiUrl } = getEnvVars();
+
 const api = {
-    baseURL: "https://jsonplaceholder.typicode.com",
+    baseURL: apiUrl,
     userPath: "/users/",
     addUser: "/addUser/",
     listServices: "/services/",
